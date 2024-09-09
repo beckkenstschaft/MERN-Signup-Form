@@ -4,7 +4,7 @@ import Signup from "./Signup";
 function App() {
   return (
     <div>
-      <h1>Signup Page</h1>
+      <h1>Create your account with us !!!</h1>
       <Signup />
     </div>
   );
