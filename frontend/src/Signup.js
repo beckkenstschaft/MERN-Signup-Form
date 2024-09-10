@@ -51,6 +51,7 @@ function Signup() {
 
   return (
     <div className="container" ref={containerRef}>
+      <h1><span className="brand-logo">hard</span>Coded</h1>
       <form onSubmit={handleSubmit}>
         
         <input

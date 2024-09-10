@@ -95,6 +95,10 @@ body::before {
   animation: moveBackground 6s infinite alternate;
 }
 
+.brand-logo{
+  color: #509ee8;
+}
+
 @media(max-width:760px){
   body{
     background: none;
