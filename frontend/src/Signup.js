@@ -52,6 +52,7 @@ function Signup() {
   return (
     <div className="container" ref={containerRef}>
       <h1><span className="brand-logo">hard</span>Coded</h1>
+      <p>Easing your job search journey.</p>
       <form onSubmit={handleSubmit}>
         
         <input
@@ -73,8 +74,11 @@ function Signup() {
         <button type="submit" className="Signup-button">
           Signup
         </button>
+        
+        <p className="form-copyright">Copyright © 2024 hardCoded v1.1.0</p>
       </form>
-      
+      <br></br>
+      <br></br>
       <p>{message}</p>
     </div>
   );

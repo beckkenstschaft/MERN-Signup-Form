@@ -4,7 +4,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  background-color: rgb(230, 230, 230);
+  /* background: linear-gradient(135deg, #e0f7fa, #80deea); */
   color: #707070;
   font-family: 'Arial', sans-serif;
   height: 100vh;
@@ -27,7 +28,7 @@ body {
   height: auto;
   transform: perspective(1000px);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-  margin-top: 60px;
+  /* margin-top: 5px; */
 }
 
 .container:hover {
@@ -36,15 +37,21 @@ body {
 
 /* Input field animations for hover and focus */
 .input-fields {
-  width: 90%;
-  border: none;
-  border-radius: 25px;
+  width: 70%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #4b4b4b;
+  /* border-radius: 25px; */
   padding: 15px;
-  margin: 15px 0;
-  background-color: rgba(240, 240, 240, 0.8);
-  color: #333;
+  margin: 15px 30px;
+  background: none;
+  /* background-color: rgba(240, 240, 240, 0.8); */
+  color: #000000;
   font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: background-color 0.3s, box-shadow 0.3s;
   margin-top: 50px;
 }
@@ -66,19 +73,22 @@ body {
   margin-top: 80px;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(135deg, #62b4ff, #77dd77);
+  /* background: linear-gradient(135deg, #2c89e1, #79b4b9); */
   height: 50px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  background: #509ee8;
+  transition: background 0.2s ease-out, transform 0.2s ease-out;
   cursor: pointer;
   font-size: 16px;
-  font-weight: bold;
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 30px;
 }
 
 .Signup-button:hover {
-  background: linear-gradient(135deg, #77dd77, #62b4ff);
-  transform: translateY(-3px);
+  /* background: linear-gradient(135deg, #79b4b9, #2c89e1); */
+  background: #50e89a;
+  /* background-color: #50e89a; */
+  transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -97,6 +107,11 @@ body::before {
 
 .brand-logo{
   color: #509ee8;
+}
+
+.form-copyright{
+  font-size: 10px;
+  margin-left: 60px;
 }
 
 @media(max-width:760px){
