@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "./api";
-// import './Signup.css';  // Assuming your CSS is in this file
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -37,16 +36,16 @@ function Signup() {
     };
 
     const handleMouseLeave = () => {
-      container.style.transition = 'transform 0.6s ease-out';
+      container.style.transition = "transform 0.6s ease-out";
       container.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
     };
 
-    container.addEventListener('mousemove', handleMouseMove);
-    container.addEventListener('mouseleave', handleMouseLeave);
+    container.addEventListener("mousemove", handleMouseMove);
+    container.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      container.removeEventListener('mousemove', handleMouseMove);
-      container.removeEventListener('mouseleave', handleMouseLeave);
+      container.removeEventListener("mousemove", handleMouseMove);
+      container.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
@@ -67,7 +66,9 @@ function Signup() {
           className="input-fields"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit" className="Signup-button">Signup</button>
+        <button type="submit" className="Signup-button">
+          Signup
+        </button>
       </form>
       <p>{message}</p>
     </div>
