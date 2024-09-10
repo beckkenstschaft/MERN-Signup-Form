@@ -99,6 +99,7 @@ body::before {
   body{
     background: none;
     background-color: #b3eaf2;
+    overflow: hidden;
   }
   
   .container{
