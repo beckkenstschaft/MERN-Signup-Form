@@ -52,6 +52,7 @@ function Signup() {
   return (
     <div className="container" ref={containerRef}>
       <form onSubmit={handleSubmit}>
+        
         <input
           type="text"
           placeholder="Username"
@@ -59,6 +60,7 @@ function Signup() {
           className="input-fields"
           onChange={(e) => setUsername(e.target.value)}
         />
+        
         <input
           type="password"
           placeholder="Password"
@@ -66,10 +68,12 @@ function Signup() {
           className="input-fields"
           onChange={(e) => setPassword(e.target.value)}
         />
+        
         <button type="submit" className="Signup-button">
           Signup
         </button>
       </form>
+      
       <p>{message}</p>
     </div>
   );
