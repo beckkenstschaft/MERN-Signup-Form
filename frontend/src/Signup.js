@@ -12,6 +12,7 @@ function Signup() {
     try {
       const response = await axios.post("/signup", { username, password });
       setMessage(response.data.message);
+      window.location.href = "http://localhost:3001";
     } catch (error) {
       setMessage(error.response?.data?.message || "Error occurred");
     }
